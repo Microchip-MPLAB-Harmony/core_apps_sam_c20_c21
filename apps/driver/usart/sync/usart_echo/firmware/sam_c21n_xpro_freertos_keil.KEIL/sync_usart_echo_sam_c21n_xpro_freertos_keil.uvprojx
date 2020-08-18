@@ -430,7 +430,7 @@
           <File>
             <FileName>device.h</FileName>
             <FileType>5</FileType>
-            <FilePath>..\src\packs\ATSAMC21N18A_DFP\device.h</FilePath>
+            <FilePath>..\src\config\sam_c21n_xpro_freertos_keil\device.h</FilePath>
           </File>
           <File>
             <FileName>ac.h</FileName>
@@ -651,6 +651,11 @@
             <FileName>mpu_armv7.h</FileName>
             <FileType>5</FileType>
             <FilePath>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</FilePath>
+          </File>
+          <File>
+            <FileName>cachel1_armv7.h</FileName>
+            <FileType>5</FileType>
+            <FilePath>..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</FilePath>
           </File>
           <File>
             <FileName>FreeRTOSConfig.h</FileName>
