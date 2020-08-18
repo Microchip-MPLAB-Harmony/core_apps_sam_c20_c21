@@ -1,6 +1,6 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# FAT filesystem using SDSPI media
+# FAT filesystem using SD Card media
 
 This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a SD card using the SDSPI driver and the SPI PLIB.
 
@@ -54,6 +54,7 @@ The following table shows the target hardware for the application projects.
   - One micro-sd card
 
 - Connect [IO1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO) to the EXT1 header
+- Copy a JPEG file in the SD Card with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG
 - Insert the micro-SD Card in the micro-SD Card slot of the [IO1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO)
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
@@ -63,7 +64,7 @@ The following table shows the target hardware for the application projects.
 2. Press Switch to start the file operations
 3. The LED is turned ON if there was no error during creating the directory and copying the file into it
 
-    Refer to the following table for switch and LED name:
+    Refer to the following table for Switch and LED name:
 
     | Board | Switch name | LED Name |
     | ----- | -------- | --------- |
