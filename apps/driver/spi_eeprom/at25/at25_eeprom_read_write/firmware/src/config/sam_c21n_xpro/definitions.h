@@ -54,7 +54,7 @@
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
 #include "driver/at25/drv_at25.h"
-#include "peripheral/sercom/spim/plib_sercom5_spi.h"
+#include "peripheral/sercom/spi_master/plib_sercom5_spi_master.h"
 #include "system/int/sys_int.h"
 #include "system/ports/sys_ports.h"
 #include "osal/osal.h"
