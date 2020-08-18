@@ -65,27 +65,23 @@
 // *****************************************************************************
 // *****************************************************************************
 
-  
 /*** Macros for APP_CLIENT1_CS pin ***/
 #define APP_CLIENT1_CS_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 10)
 #define APP_CLIENT1_CS_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 10)
 #define APP_CLIENT1_CS_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 10)
-#define APP_CLIENT1_CS_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 10)) & 0x01)
 #define APP_CLIENT1_CS_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 10)
 #define APP_CLIENT1_CS_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 10)
+#define APP_CLIENT1_CS_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 10)) & 0x01)
 #define APP_CLIENT1_CS_PIN                  PORT_PIN_PA10
 
 /*** Macros for APP_CLIENT2_CS pin ***/
 #define APP_CLIENT2_CS_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 11)
 #define APP_CLIENT2_CS_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 11)
 #define APP_CLIENT2_CS_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 11)
-#define APP_CLIENT2_CS_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 11)) & 0x01)
 #define APP_CLIENT2_CS_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 11)
 #define APP_CLIENT2_CS_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 11)
+#define APP_CLIENT2_CS_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 11)) & 0x01)
 #define APP_CLIENT2_CS_PIN                  PORT_PIN_PA11
-
-
-
 // *****************************************************************************
 /* PORT Group
 
@@ -994,7 +990,7 @@ void PORT_GroupToggle(PORT_GROUP group, uint32_t mask);
     void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as input.
+    Configures the selected IO pins of a group as input.
 
   Description:
     This function configures the selected IO pins of a group as input. The pins
@@ -1033,7 +1029,7 @@ void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask);
     void PORT_GroupOutputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as output.
+    Configures the selected IO pins of a group as output.
 
   Description:
     This function configures the selected IO pins of a group as output. The pins
