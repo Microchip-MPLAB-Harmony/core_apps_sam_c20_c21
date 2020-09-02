@@ -6,7 +6,7 @@ This example echoes the received characters over the console using the USART dri
 
 ## Description
 
-This example uses the USART driver in synchronous mode in Bare-Metal environment to communicate over the console. It receives and echo's back the characters entered by the user.
+This example uses the USART driver in synchronous mode in RTOS environment to communicate over the console. It receives and echo's back the characters entered by the user.
 
 ## Downloading and building the application
 
@@ -20,6 +20,7 @@ To build the application, refer to the following table and open the project usin
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
 | sam_c21n_xpro_freertos.X | MPLABX project for [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) |
+| sam_c21n_xpro_freertos_keil.KEIL | KEIL project for [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) |
 |||
 
 ## Setting up the hardware
@@ -29,6 +30,7 @@ The following table shows the target hardware for the application projects.
 | Project Name| Board|
 |:---------|:---------:|
 | sam_c21n_xpro_freertos.X | [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) |
+| sam_c21n_xpro_freertos_keil.KEIL | [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) |
 |||
 
 ### Setting up [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/)
@@ -45,11 +47,12 @@ The following table shows the target hardware for the application projects.
     - Stop : 1 Bit
     - Flow Control : None
 3. Build and Program the application using its IDE
-4. Type a character and observe the output on the console as shown below:
+4. Press the RESET switch on [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/)
+5. Type a character and observe the output on the console as shown below:
 
     ![output](images/output_sync_usart_echo.png)
 
-5. LED toggles each time the character is echoed
+6. LED toggles each time the character is echoed
 
 Refer to the following table for LED name:
 
