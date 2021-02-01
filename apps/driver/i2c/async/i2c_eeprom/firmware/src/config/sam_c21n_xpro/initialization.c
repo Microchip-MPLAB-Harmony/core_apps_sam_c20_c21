@@ -192,6 +192,7 @@ SYSTEM_OBJECTS sysObj;
 
 void SYS_Initialize ( void* data )
 {
+
     NVMCTRL_REGS->NVMCTRL_CTRLB = NVMCTRL_CTRLB_RWS(3);
 
   
@@ -205,6 +206,8 @@ void SYS_Initialize ( void* data )
     NVMCTRL_Initialize( );
 
     SERCOM1_I2C_Initialize();
+
+    EVSYS_Initialize();
 
 	BSP_Initialize();
 
