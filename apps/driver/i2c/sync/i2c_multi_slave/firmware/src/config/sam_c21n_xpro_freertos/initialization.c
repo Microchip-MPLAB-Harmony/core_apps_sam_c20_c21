@@ -203,6 +203,7 @@ const SYS_CONSOLE_INIT sysConsole0Init =
 
 void SYS_Initialize ( void* data )
 {
+
     NVMCTRL_REGS->NVMCTRL_CTRLB = NVMCTRL_CTRLB_RWS(3);
 
   
