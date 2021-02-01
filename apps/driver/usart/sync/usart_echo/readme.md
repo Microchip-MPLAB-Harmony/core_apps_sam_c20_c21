@@ -27,7 +27,7 @@ To build the application, refer to the following table and open the project usin
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
 | sam_c21n_xpro_freertos.X | MPLABX project for [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamc21n-xpro) |
-| sam_c21n_xpro_freertos_keil.KEIL | KEIL project for [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamc21n-xpro) |
+| sam_c21n_xpro_freertos_keil.KEIL/sync_usart_echo_sam_c21n_xpro_freertos_keil.uvprojx | KEIL project for [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamc21n-xpro) |
 |||
 
 ## Setting up the hardware
@@ -37,7 +37,7 @@ The following table shows the target hardware for the application projects.
 | Project Name| Board|
 |:---------|:---------:|
 | sam_c21n_xpro_freertos.X | [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamc21n-xpro) |
-| sam_c21n_xpro_freertos_keil.KEIL | [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamc21n-xpro) |
+| sam_c21n_xpro_freertos_keil.KEIL/sync_usart_echo_sam_c21n_xpro_freertos_keil.uvprojx | [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamc21n-xpro) |
 |||
 
 ### Setting up [SAM C21N Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamc21n-xpro)

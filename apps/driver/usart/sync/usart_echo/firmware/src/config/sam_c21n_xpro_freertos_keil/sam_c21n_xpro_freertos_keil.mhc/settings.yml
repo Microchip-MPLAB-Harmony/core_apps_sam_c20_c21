@@ -1,0 +1,14 @@
+configName: sam_c21n_xpro_freertos_keil
+folderName: ''
+format_version: v1.0
+frameworkPath: D:\Projects\h3
+processor: ATSAMC21N18A
+projectName: sync_usart_echo_sam_c21n_xpro_freertos_keil
+settings:
+  PackageFilter: bsp;core;csp;net;
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.6.0
+  MERGE_STRATEGY: OVERWRITE
+  DFPPath: .\dev_packs\Microchip\SAMC21_DFP\3.2.68\samc21n\atdf\ATSAMC21N18A.atdf
