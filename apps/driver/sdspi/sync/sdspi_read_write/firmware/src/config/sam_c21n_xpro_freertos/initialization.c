@@ -98,7 +98,7 @@ const DRV_SDSPI_PLIB_INTERFACE drvSDSPI0PlibAPI = {
     .read = (DRV_SDSPI_PLIB_READ)SERCOM1_SPI_Read,
 
     /* SPI PLIB Transfer Status function */
-    .isBusy = (DRV_SDSPI_PLIB_IS_BUSY)SERCOM1_SPI_IsBusy,
+    .isTransmitterBusy = (DRV_SPI_PLIB_TRANSMITTER_IS_BUSY)SERCOM1_SPI_IsTransmitterBusy,
 
     .transferSetup = (DRV_SDSPI_PLIB_SETUP)SERCOM1_SPI_TransferSetup,
 
@@ -220,7 +220,7 @@ const SYS_TIME_INIT sysTimeInitData =
 void SYS_Initialize ( void* data )
 {
 
-    NVMCTRL_REGS->NVMCTRL_CTRLB = NVMCTRL_CTRLB_RWS(3);
+    NVMCTRL_REGS->NVMCTRL_CTRLB = NVMCTRL_CTRLB_RWS(3UL);
 
   
     PORT_Initialize();
