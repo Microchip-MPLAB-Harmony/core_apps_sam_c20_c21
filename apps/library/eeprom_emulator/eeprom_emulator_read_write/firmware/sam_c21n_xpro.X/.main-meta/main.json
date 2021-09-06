@@ -1,0 +1,79 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_sam_c20_c21_fs_nvm_fat_sam_c21n_xpro",
+		"version": "3.1.0",
+		"displayName": "EEPROM Emulator Read Write Example for SAM C20/C21 Family",
+		"projectName": "eeprom_emulator_read_write_sam_c21n_xpro",
+		"shortDescription": "This application shows an example of emulating an EEPROM on flash memory using EEPROM Emulator library.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.45.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "SAMC21_DFP",
+			"semverRange": "^3.4.78"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.7.0"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAMC21N18A",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"SAM C21N Xplained Pro Evaluation Kit"
+			],
+			[
+				"Harmony",
+				"Middleware",
+				"Emulated EEPROM library",
+				"EEPROM Emulator"
+			],
+			[
+				"NVMCTRL",
+			]
+		],
+		"peripherals": [
+			"NVMCTRL"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"File System",
+			"ATSAMC21N18A",
+			"SAM C20/C21 Family",
+			"Emulated EEPROM library",
+			"EEPROM Emulator"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
