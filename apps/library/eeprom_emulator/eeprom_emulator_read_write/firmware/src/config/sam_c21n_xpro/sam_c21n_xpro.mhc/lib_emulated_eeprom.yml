@@ -220,6 +220,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: lib_emulated_eeprom, value: '4194304'}
+  - type: Setting
+    attributes: {id: XC32_LINKER_MACRO_ROM_LENGTH}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: value}
+        children:
+        - {type: Value, value: ROM_LENGTH=0x40000}
 - type: Attachments
   children:
   - type: DirectDependency
