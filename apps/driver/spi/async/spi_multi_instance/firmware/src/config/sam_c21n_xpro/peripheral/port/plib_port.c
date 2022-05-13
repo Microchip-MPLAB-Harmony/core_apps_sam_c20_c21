@@ -52,7 +52,6 @@
 // Section: PORT Implementation
 // *****************************************************************************
 // *****************************************************************************
-
 // *****************************************************************************
 /* Function:
 
@@ -79,7 +78,9 @@ void PORT_Initialize(void)
    PORT_REGS->GROUP[0].PORT_PINCFG[19] = 0x1;
    PORT_REGS->GROUP[0].PORT_PINCFG[20] = 0x0;
 
+   PORT_REGS->GROUP[0].PORT_PMUX[5] = 0x0;
    PORT_REGS->GROUP[0].PORT_PMUX[9] = 0x22;
+   PORT_REGS->GROUP[0].PORT_PMUX[10] = 0x0;
 
    /************************** GROUP 1 Initialization *************************/
    PORT_REGS->GROUP[1].PORT_DIR = 0x40001008;
@@ -94,6 +95,9 @@ void PORT_Initialize(void)
 
    PORT_REGS->GROUP[1].PORT_PMUX[0] = 0x33;
    PORT_REGS->GROUP[1].PORT_PMUX[1] = 0x3;
+   PORT_REGS->GROUP[1].PORT_PMUX[6] = 0x0;
+   PORT_REGS->GROUP[1].PORT_PMUX[9] = 0x0;
+   PORT_REGS->GROUP[1].PORT_PMUX[15] = 0x0;
 
    /************************** GROUP 2 Initialization *************************/
    PORT_REGS->GROUP[2].PORT_DIR = 0x10000020;
@@ -102,10 +106,12 @@ void PORT_Initialize(void)
    PORT_REGS->GROUP[2].PORT_PINCFG[27] = 0x1;
    PORT_REGS->GROUP[2].PORT_PINCFG[28] = 0x0;
 
+   PORT_REGS->GROUP[2].PORT_PMUX[2] = 0x0;
    PORT_REGS->GROUP[2].PORT_PMUX[13] = 0x30;
+   PORT_REGS->GROUP[2].PORT_PMUX[14] = 0x0;
+
 
 }
-
 // *****************************************************************************
 /* Function:
     uint32_t PORT_GroupRead(PORT_GROUP group)
