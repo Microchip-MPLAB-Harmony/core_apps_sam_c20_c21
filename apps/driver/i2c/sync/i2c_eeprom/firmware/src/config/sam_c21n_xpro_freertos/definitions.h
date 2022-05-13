@@ -56,11 +56,11 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "bsp/bsp.h"
 #include "driver/i2c/drv_i2c.h"
 #include "system/int/sys_int.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
-#include "bsp/bsp.h"
 #include "app_i2c_eeprom.h"
 
 
