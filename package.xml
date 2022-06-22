@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <Package name="core_apps_sam_c20_c21">
     <Dependencies>
-        <Dependency name="core" version="v3.10.0"/></Dependencies>
+        <Dependency name="core" version="v3.11.0"/></Dependencies>
 </Package>
