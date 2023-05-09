@@ -57,8 +57,8 @@
 #include "peripheral/eic/plib_eic.h"
 #include "FreeRTOS.h"
 #include "task.h"
-#include "osal/osal.h"
 #include "bsp/bsp.h"
+#include "osal/osal.h"
 #include "task1.h"
 #include "task2.h"
 #include "task3.h"
@@ -73,6 +73,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAMC21N18A"
+#define DEVICE_ARCH			 "CORTEX-M0PLUS"
+#define DEVICE_FAMILY		 "SAMC"
+#define DEVICE_SERIES		 "SAMC21"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 48000000
