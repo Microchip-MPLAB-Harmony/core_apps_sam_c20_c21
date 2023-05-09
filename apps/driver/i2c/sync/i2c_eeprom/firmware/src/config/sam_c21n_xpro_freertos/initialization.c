@@ -56,12 +56,12 @@
 // ****************************************************************************
 #pragma config NVMCTRL_BOOTPROT = SIZE_0BYTES
 #pragma config NVMCTRL_EEPROM_SIZE = SIZE_0BYTES
-#pragma config BODVDDUSERLEVEL = 0x8 // Enter Hexadecimal value
+#pragma config BODVDDUSERLEVEL = 0x8U // Enter Hexadecimal value
 #pragma config BODVDD_DIS = DISABLED
 #pragma config BODVDD_ACTION = NONE
 
 #pragma config BODVDD_HYST = DISABLED
-#pragma config NVMCTRL_REGION_LOCKS = 0xffff // Enter Hexadecimal value
+#pragma config NVMCTRL_REGION_LOCKS = 0xffffU // Enter Hexadecimal value
 
 #pragma config WDT_ENABLE = DISABLED
 #pragma config WDT_ALWAYSON = DISABLED
@@ -79,25 +79,29 @@
 // Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
+/* Following MISRA-C rules are deviated in the below code block */
+/* MISRA C-2012 Rule 11.1 */
+/* MISRA C-2012 Rule 11.3 */
+/* MISRA C-2012 Rule 11.8 */
 // <editor-fold defaultstate="collapsed" desc="DRV_I2C Instance 0 Initialization Data">
 
 /* I2C Client Objects Pool */
 static DRV_I2C_CLIENT_OBJ drvI2C0ClientObjPool[DRV_I2C_CLIENTS_NUMBER_IDX0];
 
 /* I2C PLib Interface Initialization */
-const DRV_I2C_PLIB_INTERFACE drvI2C0PLibAPI = {
+static const DRV_I2C_PLIB_INTERFACE drvI2C0PLibAPI = {
 
     /* I2C PLib Transfer Read Add function */
-    .read = (DRV_I2C_PLIB_READ)SERCOM1_I2C_Read,
+    .read_t = (DRV_I2C_PLIB_READ)SERCOM1_I2C_Read,
 
     /* I2C PLib Transfer Write Add function */
-    .write = (DRV_I2C_PLIB_WRITE)SERCOM1_I2C_Write,
+    .write_t = (DRV_I2C_PLIB_WRITE)SERCOM1_I2C_Write,
 
 
     /* I2C PLib Transfer Write Read Add function */
     .writeRead = (DRV_I2C_PLIB_WRITE_READ)SERCOM1_I2C_WriteRead,
 
-    /*I2C PLib Tranfer Abort function */
+    /*I2C PLib Transfer Abort function */
     .transferAbort = (DRV_I2C_PLIB_TRANSFER_ABORT)SERCOM1_I2C_TransferAbort,
 
     /* I2C PLib Transfer Status function */
@@ -112,7 +116,7 @@ const DRV_I2C_PLIB_INTERFACE drvI2C0PLibAPI = {
 
 
 /* I2C Driver Initialization Data */
-const DRV_I2C_INIT drvI2C0InitData =
+static const DRV_I2C_INIT drvI2C0InitData =
 {
     /* I2C PLib API */
     .i2cPlib = &drvI2C0PLibAPI,
@@ -126,8 +130,8 @@ const DRV_I2C_INIT drvI2C0InitData =
     /* I2C Clock Speed */
     .clockSpeed = DRV_I2C_CLOCK_SPEED_IDX0,
 };
-
 // </editor-fold>
+
 
 
 
@@ -160,7 +164,7 @@ SYSTEM_OBJECTS sysObj;
 // *****************************************************************************
 // *****************************************************************************
 
-
+/* MISRAC 2012 deviation block end */
 
 /*******************************************************************************
   Function:
@@ -174,6 +178,8 @@ SYSTEM_OBJECTS sysObj;
 
 void SYS_Initialize ( void* data )
 {
+    /* MISRAC 2012 deviation block start */
+    /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
 
     NVMCTRL_REGS->NVMCTRL_CTRLB = NVMCTRL_CTRLB_RWS(3UL);
 
@@ -193,15 +199,26 @@ void SYS_Initialize ( void* data )
 
 	BSP_Initialize();
 
+
+    /* MISRAC 2012 deviation block start */
+    /* Following MISRA-C rules deviated in this block  */
+    /* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
+    /* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+
     /* Initialize I2C0 Driver Instance */
     sysObj.drvI2C0 = DRV_I2C_Initialize(DRV_I2C_INDEX_0, (SYS_MODULE_INIT *)&drvI2C0InitData);
 
 
 
+
+    /* MISRAC 2012 deviation block end */
     APP_I2C_EEPROM_Initialize();
 
 
     NVIC_Initialize();
+
+
+    /* MISRAC 2012 deviation block end */
 
 }
 
