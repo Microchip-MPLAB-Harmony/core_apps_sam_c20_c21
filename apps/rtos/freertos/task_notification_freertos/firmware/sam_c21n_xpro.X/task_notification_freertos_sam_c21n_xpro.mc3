@@ -1,4 +1,4 @@
-<config configName="sam_c21n_xpro" projectName="task_notification_freertos_sam_c21n_xpro" configVersion="1.1" device="ATSAMC21N18A" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
+<config configName="sam_c21n_xpro" projectName="task_notification_freertos_sam_c21n_xpro" configVersion="1.1" device="ATSAMC21N18A" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -35,7 +35,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.0"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -2549,11 +2549,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\FreeRTOSConfig.h</file>
-         <hash>e150551de9250acfde9b0d3813cb6a123b939ca14d5763bd4f5cdc26ea0a1efe</hash>
+         <hash>82d619dcfe6fb2b091c1c880bfad1d8973509d1be670e57b9b3ed4aa7a165884</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\peripheral\clock\plib_clock.c</file>
-         <hash>d26c23c63d59040babb123f0ed7c0153cf218f26e46d88fe503c9a834be333b7</hash>
+         <hash>00ba87dd3cfc1b50824d816d8e5aabbe4bac9b9ee6d437753dc522eb48fe5bed</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</file>
@@ -2577,7 +2577,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\task.h</file>
-         <hash>85a11a834d04120402087ac61190566f893480e9d6c8fe903218330dc4ea7d30</hash>
+         <hash>45f2245c914ed25ab26a1ea78ddd4ac74cb6522e1b26ac5c44b614ca4c8cee99</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\supc.h</file>
@@ -2585,7 +2585,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\timers.c</file>
-         <hash>dae8ab1093eed0eebd86eef7f4e777e3d249d98b75528ff3841d41ce1c8f3fa6</hash>
+         <hash>24962ef361f396aaa5e6e33776eeeddaf2fb251c87b6fe50602acc56c537b093</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\mclk.h</file>
@@ -2593,7 +2593,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</file>
-         <hash>43bd2a4bf5d6495e04c8409187d8f31dfaee58d8f94d7e3a4fd9830e5d7e68dc</hash>
+         <hash>b876d839460197d94d0f95fb93c6aeb457f6fc572d32258480fed7d4de686b6b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\component\tc.h</file>
@@ -2613,15 +2613,15 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\list.h</file>
-         <hash>f288a68b8559a1913dd663136711f7adcaf8b3430627d7102978be4d808a02eb</hash>
+         <hash>dc572f54391c0407fc25db360d912fca9118cddae7bd2e3099eb13f18804e5a9</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\peripheral\nvic\plib_nvic.c</file>
-         <hash>094d62b85dd09844627faf5d29fa4c0c79cd346853d21b06104a0fd6534dd985</hash>
+         <hash>056a589ef1f8f3bbb9c37fd4685b97207b957116104636b2ead4e442cc135a46</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\croutine.h</file>
-         <hash>b6da8ad0cb09303c87eb634679b97f56001c14f45acd1378103504699a95cad4</hash>
+         <hash>cf52c15fa26a8d4f82b55909b75ebfe2aab25468ba7780748912ddead9812b4e</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\peripheral\clock\plib_clock.h</file>
@@ -2633,11 +2633,11 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\croutine.c</file>
-         <hash>4566d5abfceea128a553ecf2bbb22b9d7c9c8a1d3c1f02f9091182b5290d02fc</hash>
+         <hash>ebf0cdce261dc4a256c06c0d4ad2582e6026a6da0e973d4cb92092e94ce8f370</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\tasks.c</file>
-         <hash>1bb7605ee067c555e1cd559e0d04eddd268f8a19829eaadcef85cecd0364b906</hash>
+         <hash>5690fcd0ac770de9b71c2f0d69f5bb01b102910ca05784aa68b6527ff0465af5</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\tc6.h</file>
@@ -2657,7 +2657,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\initialization.c</file>
-         <hash>90fc6ce5e8a429aaf3438cf71b48cb2664d44c560823a4842ec2f1c2e4f8460d</hash>
+         <hash>1bc6e77ec13954daee29e42bc5aec6049f9e6c3e95ef3f167286b068a306c816</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\component\fuses.h</file>
@@ -2673,7 +2673,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\freertos_hooks.c</file>
-         <hash>1c31f7febed38afbcb09d11b002c5dddda98c7ed7aba9ff8f8e32b8c5f288a47</hash>
+         <hash>3062db4f47d59d8ff5654c75b8f3d09cb07ce6c85fd6dfdc1b48536ac865a526</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\component\eic.h</file>
@@ -2685,7 +2685,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\portable.h</file>
-         <hash>c95eb0d549ff1c20edebfec41d73584b5a20d21df20a724084200954b9e8d252</hash>
+         <hash>7ade8f368002778c723b3c4e14084910b7225cd36363ed0c948e9ea36c6f251f</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\core_cm0plus.h</file>
@@ -2701,11 +2701,11 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\list.c</file>
-         <hash>21fe8dd565f9610e1ff4a6bf7bebbd16842af13d3d2294f1dc67ad279fb01d22</hash>
+         <hash>db5c169cf3efd68da1c6a923ac84eebc724d602c940bde0b9b5f01f05028fde4</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\osal\osal_definitions.h</file>
-         <hash>6dc49e317b4557c5516a172c1437125874abd98ffcc7260e3422966078dcef7f</hash>
+         <hash>af2f2336fac0fd5b49fb2d1c8f81baa4f554101b06f130aaa608cd9685c4ac35</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\tcc2.h</file>
@@ -2713,7 +2713,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\exceptions.c</file>
-         <hash>cc07b84902bf881b410bee8cd4463b438ad2997c8fd8d3f308a16d926f75d601</hash>
+         <hash>3d788ce1bd25caaaf6b533ec5b06e4b1e753044c1a217dd5cdf8629628ae85a9</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\dsu.h</file>
@@ -2733,11 +2733,11 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</file>
-         <hash>783d9a41c90817eec55d9317475cc2663a785fc9a955c06d3207fcee6e0ec080</hash>
+         <hash>2b46a2511ce5d23a56bc83079333d8d0a2e33763e5829c9383252806887a3dc0</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\osal\osal_freertos.h</file>
-         <hash>ca5e502b9f076c4bdc8d97ac2e4cfdfa5d1b49f7d64222c353fac4dcd794bc7c</hash>
+         <hash>7ad9faa903d8587bab9490660328f134b8e027f9c24bca47201f3f96f3b99474</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</file>
@@ -2757,11 +2757,11 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h</file>
-         <hash>c8d9b7a52d092f37b4c3b821806bd6e8a30dbcc600960f9aed2b2f10f965c09f</hash>
+         <hash>03e9c94aba57e3cf7f4f73bc2d3eb4a96ae38f3425eedb5450622ca286475a0b</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\osal\osal_freertos.c</file>
-         <hash>6f35cfd335587dd112d0ac648ae99539a5acbb98ba80ce6e8c7c855e7b8d7465</hash>
+         <hash>85201651ffb4dad86674b478746e0dc8cd833f98b39c83efc2ae3639f3efdd3b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\hmatrixhs.h</file>
@@ -2797,7 +2797,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\bsp\bsp.h</file>
-         <hash>1cf5ac8f05a2e160a4a77b406f12c2432652b97ec2542ca2d7a90a70aef1997a</hash>
+         <hash>0aa777be19b31f874cc00bbc97cb05a0999844f7f169aa1bb9c0313fee135267</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\component\tcc.h</file>
@@ -2833,7 +2833,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\queue.h</file>
-         <hash>ff7a2139380ad0e2695bbc0d068db7a3b7e54ec41387b4c77acbe1aaa2921b7c</hash>
+         <hash>1b61c1669091e59798a34c32c0f1e234d3f6a645f47641753eceeb7e1d9ce628</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\sercom3.h</file>
@@ -2873,7 +2873,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\osal\osal.h</file>
-         <hash>d42702188d00d3e1d7219d7eef030485896bf8b5ebe55318656e82f0fbb89788</hash>
+         <hash>8404fbe44807fa0484ffb38843a72cb9af8e31c9c30bd1b2594e609b8ea317d9</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\eic.h</file>
@@ -2893,7 +2893,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h</file>
-         <hash>1947473678873963f3193497280d907f59a5936f92df6395327f7ca684cb1aa6</hash>
+         <hash>35000a143464bbbd8df7c9a6f066a64598a24da5174a7be33972e62bfbd75f4d</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\tc7.h</file>
@@ -2901,11 +2901,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\toolchain_specifics.h</file>
-         <hash>c93f9d68b1623668727be21b4449250a7e4a5d7040776d6f6d604a7528ffc9eb</hash>
+         <hash>a4f1774c6f1f8c6cd522567536c9e9d75ca63259b868015ac9b0fb0aeeffe1f4</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\pin_configurations.csv</file>
-         <hash>3843720763c70bfd027f779996e4a2b94567e3b3aa75672d2fa2521a36beeb8e</hash>
+         <hash>76945c951ca35b103907a757ba32e8fa3c6f54d2f8a717be6bb5b8a5b50044ce</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\pio\samc21n18a.h</file>
@@ -2929,15 +2929,15 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\semphr.h</file>
-         <hash>6bc571df5182f06bcafe5280fdf762bbba2bf1dbb7867ae3721ce2d7e3e51dae</hash>
+         <hash>c624e8cdfc07844d4cf35382f3cc908c872375c7a3048482bdc110bda88cc4f2</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\timers.h</file>
-         <hash>2bf5b5f5d83684c1e6d90e5bd17da9de41d38ed61ec0410f94595ff343f89174</hash>
+         <hash>ee0f596a54137e26ca806ebf067c4c6219a61348f1cbae8861a43d2d4891e1f9</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\port.c</file>
-         <hash>129e126cc6037bae981bbb727343f58a997bdb9850d1c920390a07e82fdca5ad</hash>
+         <hash>77dd5f9b47495242ed6c37a80fcd0a366bb292092c01afb3f1d7bbb18b508cd3</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\sdadc.h</file>
@@ -2945,15 +2945,15 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\FreeRTOS_tasks.c</file>
-         <hash>f97f4e54a7511e5aea34f583061c628bf718b1024af6ec4cff55cb50365305da</hash>
+         <hash>14020d617b96dd2814e1211f6e3b645bcf5e2bd3179c23fe7dd16bc666fe9463</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\interrupts.h</file>
-         <hash>d58b44320815e61bc03e3209442c85c41d904aa4d4ad7c3bec57ceb2c67da775</hash>
+         <hash>03209e3f3c2926d385c0b61045251c878268e8b650e313967dd8ba142e019d72</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\event_groups.c</file>
-         <hash>82542c835466f2abd0eeb2988a0bcecf3d6a14c9dd87ad4a7ca325b15afbce95</hash>
+         <hash>76e967b14d231e4f31f014f1564f359a7bfd36bfa263ee6f437afa8c056df657</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
@@ -2965,7 +2965,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\interrupts.c</file>
-         <hash>faf4291a994ab10c30c05833e11564f9f8851e6a3e711a08e1c51a6b6f8c05d8</hash>
+         <hash>e5f17edbf8af6146d64e1902d3f672c978aabe4cb61941fb622017c8d48ef66b</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\peripheral\nvmctrl\plib_nvmctrl.h</file>
@@ -2997,11 +2997,15 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM0\portmacro.h</file>
-         <hash>497fedcaae6e50dd33ded50764bbd28dac9897e93566e212279229ef094daf79</hash>
+         <hash>12067303139aca6ff922678a4be9fb152f0780eb6d0897c1a85527c5fa0cbb73</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\tcc0.h</file>
          <hash>54f0284df69184e7a9e4508b42d4b1f969612d82e1ef5767b912e8957fc7677c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_c21n_xpro\sys_tasks.h</file>
+         <hash>c85c4ebfa252edb87e7352d6c72df9abbc6ae0a4609521eb6b42e6236e1162ea</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\component\nvmctrl.h</file>
@@ -3009,7 +3013,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_1.c</file>
-         <hash>d03a08079e678cc6e6a1e2105684ab0082d190bbb731f6807d75e1aca260e98f</hash>
+         <hash>286e3fee81c9107fc6dec40405f500cabdca56836d29747c182f0899bb8997fd</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\component\divas.h</file>
@@ -3029,7 +3033,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\peripheral\nvmctrl\plib_nvmctrl.c</file>
-         <hash>ab6f363dc6978fa96d7ac0736f1647d98df6474db7a58f3e2a2e83bf8ba4c282</hash>
+         <hash>1fb8d05a455e4b5ec9a5e2fdfe11470cbde614fa7df8a005b0f0110a95f071bc</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\device.h</file>
@@ -3041,7 +3045,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h</file>
-         <hash>06b5b66a9b98ad4998c82d353c0108b9db1a846951b8865cbdeeef90c5bbe2fe</hash>
+         <hash>3cddf2b3d47ae387e376ac75eb468f9d8ffb575d68c143e08d54af4087474cce</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\component\mtb.h</file>
@@ -3049,7 +3053,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\peripheral\port\plib_port.c</file>
-         <hash>a44a78261f0cb6e1c4a2a6b2a3efb6d05666f8a114c6499688faefeb316c7b86</hash>
+         <hash>04642404c5033dc596d986e26195bd300ef47fc43629fd82b4cf9052aa389b9a</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\configuration.h</file>
@@ -3061,7 +3065,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\projdefs.h</file>
-         <hash>292c78c91dbf63a6aa028f381b1dd548d549949f4fb9fcfd97f949569e013d76</hash>
+         <hash>8faf4220ded25b00fd72424a2fa4e63e154713ae7b42f7270f1e3289362a6312</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\peripheral\evsys\plib_evsys.c</file>
@@ -3069,7 +3073,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\message_buffer.h</file>
-         <hash>0f5a90e8303d9aa2a9c897d6b90da50df21776c6bde7bf8c792cacffa3048c8d</hash>
+         <hash>9a8141d3d6c8044a57d7e448180c9bd2ed32e45ded32be288d095a39dced91ab</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\peripheral\evsys\plib_evsys.h</file>
@@ -3105,15 +3109,15 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\event_groups.h</file>
-         <hash>a73c0b319370116d5981d5dacbabad3a775f85ae540ef70b4ced1c99c9ac6cd5</hash>
+         <hash>7b3dd12a50d649c124c1af8be742671b9965b6f924310bda7984fe1b65c7f54a</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\queue.c</file>
-         <hash>4452e3b0e6446b74c7d010d308072ba0a35c1f92bcf3882a54bf3796a72517aa</hash>
+         <hash>5cdf4fa35fe059446effff5bf20deaf83ddffb08921bc198fda106b1d17dd894</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\startup_xc32.c</file>
-         <hash>d7ba451f4fffc267a5da6a83377b2b935a88cd73342f8a1f38ea8c39a86d963f</hash>
+         <hash>e6227d89e36b74af1bc21e00e80b390502c97aaaa65796291f63b2d96cf0678e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\component\dmac.h</file>
@@ -3129,7 +3133,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_wrappers.h</file>
-         <hash>0f7a750669b24c41af51482eb76c867a1ed11c14dd4877d07433db3953d9a792</hash>
+         <hash>5014408cc33f0f616215f2b48c67b0d47ccc35bfd5f0044ac653b5bbc6cf5778</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\sercom5.h</file>
@@ -3157,7 +3161,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_c21n_xpro\definitions.h</file>
-         <hash>8e2244b84f7a06cc780ff1d9819b29033195ebaee50598abf7db0a335a4a523a</hash>
+         <hash>e98d7f5a486a322407bde29d1b8ccea3c2f4e4d739c7d587b3a22bc19b971312</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\ccl.h</file>
@@ -3169,7 +3173,7 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\stream_buffer.c</file>
-         <hash>a62731cd211dd9caf70958b229d4a3a607ef12e6fbfec573a0d089f21c45f34f</hash>
+         <hash>0ec303ba296caca5de955dc470bcadd134fb15b192ddf61c9afc92070bc1039a</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMC21N18A_DFP\instance\port.h</file>
