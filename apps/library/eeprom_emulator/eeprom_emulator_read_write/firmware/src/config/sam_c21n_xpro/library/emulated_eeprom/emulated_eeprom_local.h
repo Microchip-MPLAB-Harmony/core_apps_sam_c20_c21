@@ -39,8 +39,8 @@
 *******************************************************************************/
 //DOM-IGNORE-END
 
-#ifndef _EEPROM_EMULATOR_LOCAL_H
-#define _EEPROM_EMULATOR_LOCAL_H
+#ifndef EEPROM_EMULATOR_LOCAL_H
+#define EEPROM_EMULATOR_LOCAL_H
 
 #include "emulated_eeprom_definitions.h"
 #include "osal/osal.h"
@@ -49,16 +49,19 @@
 extern "C" {
 #endif
 
+/* MISRA C-2012 Rule 5.4 deviated:2 Deviation record ID -  H3_MISRAC_2012_R_5_4_DR_1 */
 #define EEPROM_EMULATOR_ROW_SIZE                                256
-#define EEPROM_EMULATOR_PAGES_PER_ROW                           4
-#define EEPROM_EMULATOR_PAGE_SIZE                               64
-#define EEPROM_EMULATOR_INVALID_PAGE_NUMBER                     0xFFFF
-#define EEPROM_EMULATOR_INVALID_ROW_NUMBER                      0xFFFF
-#define EEPROM_EMULATOR_HEADER_SIZE                             4
-#define EEPROM_EMULATOR_NUM_PHYSICAL_PAGES                      128
-#define EEPROM_EMULATOR_NUM_LOGICAL_PAGES                       62
+#define EEPROM_EMULATOR_PAGES_PER_ROW                           4U
+#define EEPROM_EMULATOR_PAGE_SIZE                               64U
+#define EEPROM_EMULATOR_INVALID_PAGE_NUMBER                     0xFFFFU
+#define EEPROM_EMULATOR_INVALID_ROW_NUMBER                      0xFFFFU
+#define EEPROM_EMULATOR_HEADER_SIZE                             4U
+#define EEPROM_EMULATOR_NUM_PHYSICAL_PAGES                      128U
+#define EEPROM_EMULATOR_NUM_LOGICAL_PAGES                       62U
 #define EEPROM_EMULATOR_LOGICAL_SIZE_BYTES                      3720
 #define EEPROM_EMULATOR_NUM_LOGICAL_PAGES_PER_ROW               (EEPROM_EMULATOR_PAGES_PER_ROW>>1)
+
+/* MISRAC 2012 deviation block end */
 
 
 
@@ -98,11 +101,8 @@ typedef struct
     /** Initialization state of the EEPROM emulator. */
     bool initialized;
 
-
-
-   /** Absolute byte pointer to the first byte of RWWEE memory where the emulated EEPROM is stored. */
-   const EEPROM_PAGE* rwwee;
-
+    /** Absolute byte pointer to the first byte of RWWEE memory where the emulated EEPROM is stored. */
+    EEPROM_PAGE* rwwee;
 
     /** Mapping array from logical EEPROM pages to physical FLASH pages. */
     uint8_t page_map[EEPROM_EMULATOR_NUM_LOGICAL_PAGES];
@@ -131,4 +131,4 @@ typedef struct
 }
 #endif
 
-#endif /* _EEPROM_EMULATOR_LOCAL_H */
+#endif /* EEPROM_EMULATOR_LOCAL_H */
