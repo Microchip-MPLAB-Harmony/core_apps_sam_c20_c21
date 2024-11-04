@@ -57,12 +57,12 @@
 #include "peripheral/dmac/plib_dmac.h"
 #include "peripheral/sercom/spi_master/plib_sercom5_spi_master.h"
 #include "driver/spi/drv_spi.h"
+#include "bsp/bsp.h"
 #include "system/int/sys_int.h"
 #include "system/ports/sys_ports.h"
 #include "system/dma/sys_dma.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
-#include "bsp/bsp.h"
 #include "app_instance1.h"
 #include "app_instance2.h"
 #include "app_monitor.h"
@@ -78,13 +78,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "ATSAMC21N18A"
-#define DEVICE_ARCH			 "CORTEX-M0PLUS"
-#define DEVICE_FAMILY		 "SAMC"
-#define DEVICE_SERIES		 "SAMC21"
+#define DEVICE_NAME          "ATSAMC21N18A"
+#define DEVICE_ARCH          "CORTEX-M0PLUS"
+#define DEVICE_FAMILY        "SAMC"
+#define DEVICE_SERIES        "SAMC21"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 48000000
+#define CPU_CLOCK_FREQUENCY 48000000U
 
 // *****************************************************************************
 // *****************************************************************************
