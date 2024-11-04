@@ -64,7 +64,7 @@ static EEPROM_PAGE* EMU_EEPROM_PageToAddrTranslation(uint16_t physical_page)
 
 static uint16_t EMU_EEPROM_PhysicalToLogicalPage(uint16_t physical_page)
 {
-    const EEPROM_PAGE* flashAddr = NULL;
+    EEPROM_PAGE* flashAddr = NULL;
 
    flashAddr = &eeprom_instance.rwwee[physical_page];
 
