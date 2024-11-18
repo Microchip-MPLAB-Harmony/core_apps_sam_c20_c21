@@ -18,7 +18,7 @@
           <Vendor>Microchip</Vendor>
           <PackID>Microchip.SAMC21_DFP.3.8.119</PackID>
           <PackURL>https://packs.download.microchip.com/</PackURL>
-          <Cpu>IRAM(0x20000000,0x08000) IROM(0x00000000,0x40000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
+          <Cpu>IRAM(0x20000000,0x8000) IROM(0x00000000,0x40000) IROM2(0x00400000,0x2000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
           <FlashDriverDll></FlashDriverDll>
@@ -33,7 +33,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>$$Device:ATSAMC21N18A$SVD\SAMC21N\ATSAMC21N18A.svd</SFDFile>
+          <SFDFile>$$Device:ATSAMC21N18A$samc21n\svd\ATSAMC21N18A.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -189,7 +189,7 @@
             <nBranchProt>0</nBranchProt>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
-            <StupSel>8</StupSel>
+            <StupSel>0</StupSel>
             <useUlib>0</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
@@ -206,12 +206,12 @@
             <Ro1Chk>0</Ro1Chk>
             <Ro2Chk>0</Ro2Chk>
             <Ro3Chk>0</Ro3Chk>
-            <Ir1Chk>1</Ir1Chk>
+            <Ir1Chk>0</Ir1Chk>
             <Ir2Chk>0</Ir2Chk>
             <Ra1Chk>0</Ra1Chk>
             <Ra2Chk>0</Ra2Chk>
             <Ra3Chk>0</Ra3Chk>
-            <Im1Chk>1</Im1Chk>
+            <Im1Chk>0</Im1Chk>
             <Im2Chk>0</Im2Chk>
             <OnChipMemories>
               <Ocm1>
@@ -246,13 +246,13 @@
               </Ocm6>
               <IRAM>
                 <Type>0</Type>
-                <StartAddress>0x20000000</StartAddress>
-                <Size>0x8000</Size>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
               </IRAM>
               <IROM>
-                <Type>1</Type>
+                <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x40000</Size>
+                <Size>0x0</Size>
               </IROM>
               <XRAM>
                 <Type>0</Type>
@@ -277,7 +277,7 @@
               <OCR_RVCT4>
                 <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x40000</Size>
+                <Size>0x0</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -301,8 +301,8 @@
               </OCR_RVCT8>
               <OCR_RVCT9>
                 <Type>0</Type>
-                <StartAddress>0x20000000</StartAddress>
-                <Size>0x8000</Size>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
@@ -1000,6 +1000,11 @@
               <FilePath>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</FilePath>
             </File>
             <File>
+              <FileName>mpu_syscall_numbers.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_syscall_numbers.h</FilePath>
+            </File>
+            <File>
               <FileName>stream_buffer.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</FilePath>
@@ -1013,6 +1018,11 @@
               <FileName>portmacro.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\src\third_party\rtos\FreeRTOS\Source\portable\KEIL\ARM_CM0\portmacro.h</FilePath>
+            </File>
+            <File>
+              <FileName>portasm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\src\third_party\rtos\FreeRTOS\Source\portable\KEIL\ARM_CM0\portasm.h</FilePath>
             </File>
             <File>
               <FileName>drv_usart.h</FileName>
@@ -1053,16 +1063,6 @@
               <FileName>sys_int_mapping.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\src\config\sam_c21n_xpro_freertos_keil\system\int\sys_int_mapping.h</FilePath>
-            </File>
-            <File>
-              <FileName>sys_dma.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\src\config\sam_c21n_xpro_freertos_keil\system\dma\sys_dma.h</FilePath>
-            </File>
-            <File>
-              <FileName>sys_dma_mapping.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\src\config\sam_c21n_xpro_freertos_keil\system\dma\sys_dma_mapping.h</FilePath>
             </File>
             <File>
               <FileName>osal.h</FileName>
@@ -1230,14 +1230,14 @@
               <FilePath>..\src\third_party\rtos\FreeRTOS\Source\portable\KEIL\ARM_CM0\port.c</FilePath>
             </File>
             <File>
+              <FileName>portasm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\third_party\rtos\FreeRTOS\Source\portable\KEIL\ARM_CM0\portasm.c</FilePath>
+            </File>
+            <File>
               <FileName>sys_int.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\src\config\sam_c21n_xpro_freertos_keil\system\int\src\sys_int.c</FilePath>
-            </File>
-            <File>
-              <FileName>sys_dma.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\src\config\sam_c21n_xpro_freertos_keil\system\dma\sys_dma.c</FilePath>
             </File>
             <File>
               <FileName>osal_freertos.c</FileName>
@@ -1270,15 +1270,5 @@
     <components/>
     <files/>
   </RTE>
-
-  <LayerInfo>
-    <Layers>
-      <Layer>
-        <LayName>&lt;Project Info&gt;</LayName>
-        <LayTarg>0</LayTarg>
-        <LayPrjMark>1</LayPrjMark>
-      </Layer>
-    </Layers>
-  </LayerInfo>
 
 </Project>
