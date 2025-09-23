@@ -14,7 +14,7 @@
 
 //DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -57,12 +57,12 @@
 #include "peripheral/dmac/plib_dmac.h"
 #include "peripheral/sercom/spi_master/plib_sercom5_spi_master.h"
 #include "driver/spi/drv_spi.h"
-#include "bsp/bsp.h"
 #include "system/int/sys_int.h"
 #include "system/ports/sys_ports.h"
 #include "system/dma/sys_dma.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
+#include "bsp/bsp.h"
 #include "app_instance1.h"
 #include "app_instance2.h"
 #include "app_monitor.h"
