@@ -1,0 +1,318 @@
+configVersion: 1.0.0
+componentName: lib_emulated_eeprom
+coreVersion: 5.8.2
+device: ATSAMC21N18A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: lib_emulated_eeprom
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: bsp
+  type: package
+  version: v3.23.0
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.15.5
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: lib_emulated_eeprom_MEMORY_dependency
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: nvmctrl
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: NVMCTRL_MEMORY
+            type: String
+          type: Attributes
+        type: DirectDependency
+      type: Attachments
+    type: lib_emulated_eeprom
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: lib_emulated_eeprom
+          x: '281'
+          y: '116'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    EEPROM_EMULATOR_ADDRESS_SPACE:
+      attributes:
+        id: EEPROM_EMULATOR_ADDRESS_SPACE
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: RWWEE
+          type: User
+        type: Values
+      type: Combo
+    EEPROM_EMULATOR_EEPROM_LOGICAL_SIZE:
+      attributes:
+        id: EEPROM_EMULATOR_EEPROM_LOGICAL_SIZE
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '3720'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_EEPROM_START_ADDRESS:
+      attributes:
+        id: EEPROM_EMULATOR_EEPROM_START_ADDRESS
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '262144'
+          type: Dynamic
+        type: Values
+      type: Hex
+    EEPROM_EMULATOR_IS_DEPENDENCY_SATISFIED:
+      attributes:
+        id: EEPROM_EMULATOR_IS_DEPENDENCY_SATISFIED
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EEPROM_EMULATOR_MAIN_ARRAY_ENABLED:
+      attributes:
+        id: EEPROM_EMULATOR_MAIN_ARRAY_ENABLED
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EEPROM_EMULATOR_MAIN_ARRAY_NUM_PHYSICAL_PAGES:
+      attributes:
+        id: EEPROM_EMULATOR_MAIN_ARRAY_NUM_PHYSICAL_PAGES
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_MAIN_ARRAY_SIZE:
+      attributes:
+        id: EEPROM_EMULATOR_MAIN_ARRAY_SIZE
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '262144'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_MAIN_ARRAY_START_ADDR:
+      attributes:
+        id: EEPROM_EMULATOR_MAIN_ARRAY_START_ADDR
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_NUM_LOGICAL_PAGES:
+      attributes:
+        id: EEPROM_EMULATOR_NUM_LOGICAL_PAGES
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '62'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_NUM_PHYSICAL_PAGES:
+      attributes:
+        id: EEPROM_EMULATOR_NUM_PHYSICAL_PAGES
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '128'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_NVM_PLIB:
+      attributes:
+        id: EEPROM_EMULATOR_NVM_PLIB
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: NVMCTRL
+          type: Dynamic
+        type: Values
+      type: String
+    EEPROM_EMULATOR_PAGES_PER_ROW:
+      attributes:
+        id: EEPROM_EMULATOR_PAGES_PER_ROW
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '4'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_PAGE_SIZE:
+      attributes:
+        id: EEPROM_EMULATOR_PAGE_SIZE
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '64'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_ROW_SIZE:
+      attributes:
+        id: EEPROM_EMULATOR_ROW_SIZE
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '256'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_RWWEE_ENABLED:
+      attributes:
+        id: EEPROM_EMULATOR_RWWEE_ENABLED
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EEPROM_EMULATOR_RWWEE_NUM_PHYSICAL_PAGES:
+      attributes:
+        id: EEPROM_EMULATOR_RWWEE_NUM_PHYSICAL_PAGES
+      children:
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '128'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_RWWEE_SIZE:
+      attributes:
+        id: EEPROM_EMULATOR_RWWEE_SIZE
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '8192'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_EMULATOR_RWWEE_START_ADDRESS:
+      attributes:
+        id: EEPROM_EMULATOR_RWWEE_START_ADDRESS
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: lib_emulated_eeprom
+            value: '4194304'
+          type: Dynamic
+        type: Values
+      type: Hex
+  userData: {}
